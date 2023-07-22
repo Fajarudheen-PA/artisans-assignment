@@ -1,0 +1,31 @@
+.art-btn-prop {
+    background-color: $color-white;
+    color: $color-black-2;
+    display: inline-flex;
+    font-size: 18px;
+    min-width: 234px;
+    min-height: 59px;
+    padding: $spacer-3 $spacer-4;
+    overflow: hidden;
+    font-weight: $font-bold;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s all;
+    text-decoration: none;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    &:hover{
+        background-color: $color-green;
+        color: $color-white;    
+    }
+
+    &--only-mobile{
+        font-size: 14px;
+        border: none;
+        color: $color-blue;
+        padding: 0;
+        &:hover{
+            color: $color-blue;
+        }
+    }
+}
