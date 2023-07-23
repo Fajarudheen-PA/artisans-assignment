@@ -27,7 +27,7 @@
     }
 
     &__bottom {
-        width: 82%;
+        width: 83%;
         height: 438px;
         background-color: rgba(255, 255, 255, 0.141);
         margin: auto;
@@ -63,6 +63,11 @@
         gap: 11%;
     }
 
+    &__price-field {
+        display: flex;
+
+    }
+
     &__label {
         margin: $spacer-3 $spacer-1;
         font-size: 12px;
@@ -90,6 +95,7 @@
 
     &__radio-group {
         display: flex;
+        justify-content: center;
 
         input[type="radio"] {
             display: none;
@@ -109,7 +115,7 @@
             background-color: rgba(255, 255, 255, 0.243);
             border-radius: 18px;
             text-align: center;
-            line-height: 30px;
+            line-height: 34px;
         }
 
         input[type="radio"]:checked+label span {
@@ -122,6 +128,7 @@
                 font-size: 21px;
                 font-weight: $font-regular;
                 margin-right: 20px;
+                font-family: 'Lato';
             }
 
             input[type="radio"]+label:before {
@@ -157,13 +164,17 @@
 
     }
 
-    // &__radio-furniture{
-    //     display: flex;
+    &__price-range-wrap {
+        display: flex;
 
-    //     input[type="radio"] {
-    //         display: none;
-    //       }
-    // }
+        &__left {
+            width: 50%;
+        }
+
+        &__right {
+            width: 50%;
+        }
+    }
 
 
     .switch {
@@ -225,5 +236,105 @@
 
     .slider.round:before {
         border-radius: 50%;
+    }
+}
+
+@include mobile-mobile-pro {
+    .banner {
+        padding: $spacer-6 0;
+
+        &__wrap {
+            margin: unset;
+            padding: unset;
+        }
+
+        &__head {
+            font-size: calc(5vw + 10px);
+        }
+
+        &__bottom {
+            height: auto;
+            padding: $spacer-0 $spacer-3;
+            margin-bottom: $spacer-4;
+        }
+
+        &__toggle {
+            justify-content: center;
+        }
+
+        &__form-content {
+            padding: $spacer-3 $spacer-3;
+        }
+
+        &__form-fields {
+            margin-top: $spacer-0;
+            gap: unset;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__price-field {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__radio-group {
+
+            // justify-content: flex-start;
+            &--furniture {
+                flex-direction: column;
+
+                label {
+                    font-size: 16px;
+                    margin-bottom: $spacer-2;
+                }
+            }
+        }
+    }
+}
+
+@include tab-tablet-pro {
+    .banner {
+        padding: $spacer-6 0;
+
+        &__wrap {
+            margin: unset;
+            padding: unset;
+        }
+
+        &__head {
+            font-size: calc(5vw + 10px);
+        }
+
+        &__bottom {
+            width: 90%;
+            height: auto;
+            padding: $spacer-0 $spacer-3;
+            margin-bottom: $spacer-4;
+        }
+
+        &__form-content {
+            padding: $spacer-3 $spacer-3;
+        }
+
+        &__form-fields {
+            gap: 3%;
+        }
+
+        &__price-field {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__radio-group {
+            &--furniture {
+                flex-direction: column;
+
+                label {
+                    font-size: 16px;
+                    margin-bottom: $spacer-2;
+                }
+            }
+        }
     }
 }
