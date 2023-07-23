@@ -48,6 +48,12 @@
     }
 }
 
+@mixin mobile-mobile-pro {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
 @mixin mobile-pro-desktop {
     @media (min-width: 601px) {
         @content;
