@@ -3,9 +3,9 @@
     color: $color-black-2;
     display: inline-flex;
     font-size: 18px;
-    min-width: 234px;
-    min-height: 59px;
-    padding: $spacer-1 $spacer-2;
+    min-width: 153px;
+    min-height: 50px;
+    padding: $spacer-3 $spacer-3;
     overflow: hidden;
     font-weight: $font-bold;
     justify-content: center;
@@ -17,8 +17,7 @@
     text-align: center;
 
     &:hover {
-        background-color: $color-green;
-        color: $color-white;
+        color: $color-black;
     }
 
 }

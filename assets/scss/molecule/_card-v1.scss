@@ -1,0 +1,62 @@
+.card-v1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    &__image {
+        width: 100%;
+    }
+
+    &__card-body {
+        width: 100%;
+        padding: $spacer-5 $spacer-5;
+        background-color: $color-grey-5;
+    }
+
+    &__head {
+        font-size: 18px;
+        color: $color-grey-6;
+        font-weight: $font-regular;
+        font-family: "Lato";
+        margin-bottom: $spacer-2;
+    }
+
+    &__sub-head {
+        width: 100%;
+        height: auto;
+        font-size: 21px;
+        color: $color-white;
+        font-family: "Jotia";
+        text-transform: uppercase;
+        margin-bottom: $spacer-2;
+    }
+
+    &__cat-wrap {
+        display: flex;
+        gap: 17px;
+        margin-bottom: $spacer-3;
+    }
+
+    &__cat-text {
+        opacity: 0.404;
+        font-size: 16px;
+        line-height: 30px;
+        color: #ffffff;
+        font-weight: 600;
+        font-family: "Lato";
+    }
+
+    &__price-grp {
+        display: flex;
+        gap: 24px;
+    }
+
+    &__price-text {
+        font-size: 25px;
+        color: $color-white;
+        font-weight: $font-light;
+        font-style: italic;
+        font-family: "Lato";
+        margin: auto 0;
+    }
+}
