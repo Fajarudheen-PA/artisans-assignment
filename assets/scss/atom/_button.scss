@@ -1,11 +1,11 @@
 .art-btn-prop {
-    background-color: $color-white;
+    background-color: $color-green;
     color: $color-black-2;
     display: inline-flex;
     font-size: 18px;
     min-width: 234px;
     min-height: 59px;
-    padding: $spacer-3 $spacer-4;
+    padding: $spacer-1 $spacer-2;
     overflow: hidden;
     font-weight: $font-bold;
     justify-content: center;
@@ -14,18 +14,40 @@
     text-decoration: none;
     letter-spacing: 3px;
     text-transform: uppercase;
-    &:hover{
+    text-align: center;
+
+    &:hover {
         background-color: $color-green;
-        color: $color-white;    
+        color: $color-white;
     }
 
-    &--only-mobile{
-        font-size: 14px;
-        border: none;
-        color: $color-blue;
-        padding: 0;
-        &:hover{
-            color: $color-blue;
-        }
-    }
+    // &--only-mobile {
+    //     font-size: 14px;
+    //     border: none;
+    //     color: $color-blue;
+    //     padding: 0;
+
+    //     &:hover {
+    //         color: $color-blue;
+    //     }
+    // }
+}
+
+.art-btn-view-all {
+    background-color: $color-red;
+    color: $color-white;
+    display: inline-flex;
+    font-size: 14px;
+    max-width: 156px;
+    min-height: 50px;
+    padding: $spacer-1 $spacer-2;
+    overflow: hidden;
+    font-weight: $font-bold;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s all;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
 }

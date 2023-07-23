@@ -21,3 +21,71 @@
         @content;
     }
 }
+
+
+// advanced
+// @mixin mobile-mid-range {
+//     @media (min-width: 421px) and (max-width: 600px) {
+//         @content;
+//     }
+// }
+
+// @mixin mobile-pro {
+//     @media (min-width: 601px) and (max-width: 768px) {
+//         @content;
+//     }
+// }
+
+// @mixin mobile-pro-tablet {
+//     @media (min-width: 601px) and (max-width: 991px) {
+//         @content;
+//     }
+// }
+
+// @mixin mobile-tablet {
+//     @media (max-width: 991.9px) {
+//         @content;
+//     }
+// }
+
+// @mixin mobile-pro-desktop {
+//     @media (min-width: 601px) {
+//         @content;
+//     }
+// }
+
+// @mixin tablet {
+//     @media (min-width: 769px) and (max-width: 991px) {
+//         @content;
+//     }
+// }
+
+// @mixin tablet-pro {
+//     @media (min-width: 992px) and (max-width: 1023px) {
+//         @content;
+//     }
+// }
+
+// @mixin tab-tablet-pro {
+//     @media (min-width: 769px) and (max-width: 1023px) {
+//         @content;
+//     }
+// }
+
+// @mixin tablet-desktop {
+//     @media (min-width: 769px) {
+//         @content;
+//     }
+// }
+
+// @mixin tablet-pro-desktop {
+//     @media (min-width: 992px) {
+//         @content;
+//     }
+// }
+
+// @mixin desktop {
+//     @media (min-width: 1024px) {
+//         @content;
+//     }
+// }
