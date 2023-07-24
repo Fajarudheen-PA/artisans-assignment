@@ -1,0 +1,312 @@
+.popular-areas {
+    padding: $spacer-6 0;
+    background-color: $color-white;
+
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: $spacer-5;
+        // flex-direction: column;
+    }
+
+    &__top {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: $spacer-5;
+
+        &__left {
+            width: 50%;
+
+            .ourproperties__top__head-wrap__head {
+                margin-bottom: $spacer-2;
+            }
+
+            .ourproperties__top__main-head-wrap__head {
+                width: 100%;
+                margin-bottom: $spacer-3;
+            }
+
+            .ourproperties__top__main-head-wrap {
+                flex-direction: column;
+            }
+        }
+
+        &__right {
+            width: 50%;
+            display: flex;
+            align-items: end;
+
+            p {
+                font-size: 21px;
+                line-height: 35px;
+                color: $color-grey-6;
+                font-weight: $font-regular;
+                font-family: 'Lato';
+            }
+        }
+    }
+
+    &__bottom {
+        width: 100%;
+        margin: 0 -16px;
+
+        &__margin-width {
+            width: 50%;
+            margin: 16px;
+        }
+
+        .card-v3{
+            height: 638px;
+            margin: inherit;
+        }
+
+        .slick-prev:before,
+        .slick-next:before {
+            font-family: 'slick';
+            font-size: 20px;
+            line-height: 1;
+            color: white;
+            opacity: .75;
+            background: black;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            padding: 7px;
+        }
+
+        .slick-prev:before {
+            position: relative;
+            right: 21px;
+        }
+
+        .slick-next:before {
+            position: relative;
+            left: 34px;
+        }
+    }
+}
+
+@include mobile{
+    .popular-areas {
+
+        &__wrap {
+            display: flex;
+            // flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        &__top {
+
+            display: flex;
+            flex-wrap: wrap;
+
+            &__left {
+                width: 100%;
+
+                .art-btn-view-all {
+                    margin-bottom: $spacer-3;
+                }
+            }
+
+            &__right {
+                width: 100%;
+                display: flex;
+                align-items: end;
+
+                p {
+                    font-size: 21px;
+                    line-height: 35px;
+                    color: $color-grey-6;
+                    font-weight: $font-regular;
+                    font-family: 'Lato';
+                }
+            }
+        }
+
+        &__bottom {
+            // width: 100%;
+        // margin: 0 -16px;
+
+        &__margin-width {
+            // width: 50%;
+            margin: 16px;
+        }
+
+        .card-v3{
+            width: 100%;
+            height: 638px;
+        }
+
+        .slick-prev:before,
+        .slick-next:before {
+            font-family: 'slick';
+            font-size: 20px;
+            line-height: 1;
+            color: white;
+            opacity: .75;
+            background: black;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            padding: 7px;
+        }
+
+        .slick-prev:before{
+            right: -17px;
+        }
+
+        .slick-next:before{
+            left: 0px;
+        }
+        }
+    }
+}
+
+@include mobile-pro {
+    .popular-areas {
+
+        &__wrap {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__top {
+
+            display: flex;
+            flex-wrap: wrap;
+
+            &__left {
+                width: 100%;
+
+                .art-btn-view-all {
+                    margin-bottom: $spacer-3;
+                }
+            }
+
+            &__right {
+                width: 100%;
+                display: flex;
+                align-items: end;
+
+                p {
+                    font-size: 21px;
+                    line-height: 35px;
+                    color: $color-grey-6;
+                    font-weight: $font-regular;
+                    font-family: 'Lato';
+                }
+            }
+        }
+
+        &__bottom {
+            // width: 100%;
+        margin: 0 -16px;
+
+        &__margin-width {
+            width: 50%;
+            margin: 16px;
+        }
+
+        .card-v3{
+            width: 70%;
+            margin: auto;
+            height: 638px;
+        }
+
+        .slick-prev:before,
+        .slick-next:before {
+            font-family: 'slick';
+            font-size: 20px;
+            line-height: 1;
+            color: white;
+            opacity: .75;
+            background: black;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            padding: 7px;
+        }
+
+        .slick-prev:before{
+            left: 42px;
+        }
+
+        .slick-next:before{
+            left: -23px;
+        }
+        }
+    }
+}
+
+@include tab-tablet-pro{
+    .popular-areas {
+
+        &__wrap {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__top {
+
+            display: flex;
+            flex-wrap: wrap;
+
+            &__left {
+                width: 100%;
+
+                .art-btn-view-all {
+                    margin-bottom: $spacer-3;
+                }
+            }
+
+            &__right {
+                width: 100%;
+                display: flex;
+                align-items: end;
+
+                p {
+                    font-size: 21px;
+                    line-height: 35px;
+                    color: $color-grey-6;
+                    font-weight: $font-regular;
+                    font-family: 'Lato';
+                }
+            }
+        }
+
+        &__bottom {
+            // width: 100%;
+        margin: 0 -16px;
+
+        &__margin-width {
+            width: 50%;
+            margin: 16px;
+        }
+
+        .card-v3{
+            width: 50%;
+            margin: auto;
+            height: 638px;
+        }
+
+        .slick-prev:before,
+        .slick-next:before {
+            font-family: 'slick';
+            font-size: 20px;
+            line-height: 1;
+            color: white;
+            opacity: .75;
+            background: black;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            padding: 7px;
+        }
+
+        .slick-prev:before{
+            left: 42px;
+        }
+
+        .slick-next:before{
+            left: -23px;
+        }
+        }
+    }
+}

@@ -42,6 +42,12 @@
     }
 }
 
+@mixin mobile-pro-tab-tablet-pro {
+    @media (min-width: 601px) and (max-width: 1023px) {
+        @content;
+    }
+}
+
 @mixin mobile-tablet {
     @media (max-width: 991.9px) {
         @content;
