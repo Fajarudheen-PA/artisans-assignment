@@ -1,0 +1,190 @@
+.ourproperties {
+    padding: $spacer-6 0;
+    background-color: $color-white;
+
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__top {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: $spacer-5;
+
+        &__head-wrap {
+            display: flex;
+
+            &__head {
+                width: 100%;
+                font-size: 21px;
+                line-height: 32px;
+                color: $color-grey-6;
+                font-family: "Jotia";
+                margin-bottom: $spacer-3;
+            }
+
+            &__horisondal-line {
+                position: relative;
+                top: 10px;
+                left: 12px;
+                display: inline-block;
+                width: 90px;
+                color: #707070;
+            }
+        }
+
+        &__main-head-wrap {
+            display: flex;
+            justify-content: space-between;
+
+            &__head {
+                font-size: 45px;
+                width: 50%;
+                text-transform: uppercase;
+                color: #141414;
+                font-family: "Optima";
+            }
+
+            &__btn {
+                display: flex;
+                align-items: end;
+            }
+        }
+    }
+
+    &__bottom {
+        // display: flex;
+        // flex-wrap: wrap;
+        width: 100%;
+        // justify-content: space-between;
+        // margin: 0 -16px;
+
+        &__margin-width {
+            width: 50%;
+            margin: 20px;
+        }
+
+        .card-v1 {
+            width: 100%;
+            min-height: 560px;
+            // max-height: 561px;
+        }
+
+        .card-v2{
+            width: 100%;
+            min-height: 560px;
+        }
+
+        .slick-prev:before, .slick-next:before {
+            font-family: 'slick';
+            font-size: 20px;
+            line-height: 1;
+            color: white;
+            opacity: .75;
+            background: black;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            padding: 7px;
+        }
+
+        .slick-prev:before{
+            position: relative;
+            right: 21px;
+        }
+
+        .slick-next:before{
+            position: relative;
+            left: 10px;
+        }
+    }
+}
+
+@include mobile{
+    .ourproperties {
+        
+        &__top {
+    
+            &__main-head-wrap {
+                flex-direction: column;
+    
+                &__head {
+                    margin-bottom: $spacer-3;
+                }
+            }
+        }
+    
+        &__bottom {
+            .card-v1 {
+                width: 100%;
+                min-height: 560px;
+                // max-height: 561px;
+                &__price-grp {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+            }
+            .slick-prev:before{
+                right: 0px;
+            }
+    
+            .slick-next:before{
+                left: -14px;
+            }
+        }
+    }
+}
+
+@include mobile-mobile-pro{
+    .ourproperties {
+    
+        &__bottom {
+            .slick-prev:before{
+                right: 0px;
+            }
+    
+            .slick-next:before{
+                left: -14px;
+            }
+        }
+    }
+}
+
+@include tablet {
+    .ourproperties {
+        
+        &__top {
+    
+            &__main-head-wrap {
+                flex-direction: column;
+    
+                &__head {
+                    margin-bottom: $spacer-3;
+                }
+            }
+        }
+    
+        &__bottom {
+            .card-v1 {
+                width: 100%;
+                min-height: 560px;
+                // max-height: 561px;
+                &__price-grp {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+            }
+            .slick-prev:before{
+                right: -3px;
+            }
+    
+            .slick-next:before{
+                left: -17px;
+            }
+        }
+    }
+}

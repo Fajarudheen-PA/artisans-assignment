@@ -2,7 +2,7 @@
     background-image: url('../../assets/images/card-v2.png');
     padding: $spacer-6 $spacer-4;
     width: 100%;
-    height: 537px;
+    min-height: 560px;
     background-size: cover;
     display: flex;
     align-items: flex-end;
@@ -28,5 +28,11 @@
         font-family: "Jotia";
         // text-align: left;
         margin-bottom: $spacer-5;
+    }
+}
+
+@include mobile{
+    .card-v2{
+        height: 100%;
     }
 }
