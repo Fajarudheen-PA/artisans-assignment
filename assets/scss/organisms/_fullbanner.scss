@@ -1,0 +1,45 @@
+.fullbanner {
+    background-image: url('../../assets/images/fullbanner.png');
+    padding: $spacer-6;
+    background-size: cover;
+
+    &__content {
+        text-align: center;
+        width: 100%;
+        height: auto;
+        padding: $spacer-6 0;
+    }
+
+    &__head {
+        font-size: 45px;
+        text-transform: uppercase;
+        color: $color-white;
+        font-family: "Optima";
+        margin-bottom: $spacer-2;
+    }
+
+    &__desc {
+        font-size: 24px;
+        color: $color-white;
+        font-family: "Jotia";
+        margin-bottom: $spacer-4;
+    }
+}
+
+@include mobile{
+    .fullbanner{
+        padding: $spacer-4;
+        &__head{
+            font-size: 33px;
+        }
+        &__desc{
+            font-size: 18px;
+        }
+        .art-btn-prop{
+            &--enquire {
+                min-width: 166px;
+                min-height: 50px;
+            }
+        }
+    }
+}

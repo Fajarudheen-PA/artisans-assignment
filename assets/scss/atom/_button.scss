@@ -20,20 +20,30 @@
         color: $color-black;
     }
 
-    &--gold{
+    &--gold {
         background-color: $color-gold;
         color: $color-white;
         font-size: 14px;
         letter-spacing: 2px;
         font-family: 'Lato';
+
         &:hover {
             color: $color-white;
         }
     }
 
-    &--view-details{
+    &--view-details {
         letter-spacing: 2px;
         font-size: 14px;
+    }
+
+    &--enquire {
+        background-color: $color-yellow;
+        min-width: 198px;
+        min-height: 52px;
+        font-size: 14px;
+        letter-spacing: 2px;
+        font-family: "Lato";
     }
 
 }
@@ -55,7 +65,8 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     text-align: center;
-    &:hover{
+
+    &:hover {
         color: $color-white;
     }
 }
