@@ -20,6 +20,17 @@
         color: $color-black;
     }
 
+    &--gold{
+        background-color: $color-gold;
+        color: $color-white;
+        font-size: 14px;
+        letter-spacing: 2px;
+        font-family: 'Lato';
+        &:hover {
+            color: $color-white;
+        }
+    }
+
 }
 
 .art-btn-view-all {
@@ -39,4 +50,7 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     text-align: center;
+    &:hover{
+        color: $color-white;
+    }
 }
