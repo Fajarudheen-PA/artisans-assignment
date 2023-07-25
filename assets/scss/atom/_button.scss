@@ -32,6 +32,29 @@
         }
     }
 
+    &--orange {
+        background-color: $color-orange-4;
+        color: $color-white;
+        font-size: 14px;
+        letter-spacing: 2px;
+        font-family: 'Lato';
+
+        &:hover {
+            color: $color-white;
+        }
+    }
+    &--blue {
+        background-color: $color-blue-3;
+        color: $color-white;
+        font-size: 14px;
+        letter-spacing: 2px;
+        font-family: 'Lato';
+
+        &:hover {
+            color: $color-white;
+        }
+    }
+
     &--view-details {
         letter-spacing: 2px;
         font-size: 14px;

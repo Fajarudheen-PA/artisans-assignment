@@ -1,17 +1,19 @@
 .card-v2 {
-    background-image: url('../../assets/images/card-v2.png');
+    // background-image: url('../../assets/images/card-v2.png');
     padding: $spacer-6 $spacer-4;
     width: 100%;
     min-height: 560px;
     background-size: cover;
     display: flex;
     align-items: flex-end;
+    position: relative;
 
     &__content {
         // display: flex;
         // flex-wrap: wrap;
         // justify-content: center;
-        padding: 0 $spacer-2;
+        padding: $spacer-3 $spacer-2;
+        z-index: 1;
     }
 
     &__head {
@@ -28,6 +30,14 @@
         font-family: "Jotia";
         // text-align: left;
         margin-bottom: $spacer-5;
+    }
+    .overlay{
+        background-color: rgb(255, 226, 7, 0.3);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
 }
 

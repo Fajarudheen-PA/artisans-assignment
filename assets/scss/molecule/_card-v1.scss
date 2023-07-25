@@ -60,3 +60,17 @@
         margin: auto 0;
     }
 }
+
+@include mobile{
+    .card-v1 {
+    
+        &__price-grp {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+            align-items: center;
+            // justify-content: center;
+            gap: 12px;
+        }
+    }
+}
