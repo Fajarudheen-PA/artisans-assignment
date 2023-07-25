@@ -1,9 +1,9 @@
-.ledger-navbar{
-    // background: transparent;
+.art-navbar{
+    background: transparent;
     position: fixed;
     padding: $spacer-0 0;
-    background-color: $color-blue;
-    box-shadow: 0 2px 5px $color-grey-2;
+    // background-color: $color-blue;
+    // box-shadow: 0 2px 5px $color-grey-2;
     width: 100vw;
     z-index: 9999;
 
@@ -14,10 +14,13 @@
         padding: $spacer-0;
         margin: $spacer-0;
         z-index: 4;
+        width: 100px;
+        // width: calc(70px + 0.9vw);
     }
     .navbar-expand-lg .navbar-collapse{
         justify-content: space-evenly;
         align-items: center;
+        // margin-left: $spacer-6;
     }
     .navbar-toggler{
         border: none;
@@ -35,6 +38,17 @@
         // transform: translate(-50%, -50%);
         justify-content: center;
         align-items: center;
+
+        .art-btn-prop{
+            font-size: 14px;
+            letter-spacing: 1px;
+            padding: $spacer-2 $spacer-2;
+            min-width: 149px;
+        }
+    }
+    &__whatsapp-wrap{
+        display: flex;
+        // flex-direction: column-reverse;
     }
     &__btn{
         display: flex;
@@ -73,9 +87,9 @@
         // }
     }
     &__nav-link{
-        background: linear-gradient(90deg,#001a4d,#0055ff);
-        background-clip: text;
-        color: transparent;
+        // background: linear-gradient(90deg,#001a4d,#0055ff);
+        // background-clip: text;
+        color: $color-white;
         // color: $color-black;
         font-size: 17px;
         font-weight: $font-medium;
@@ -91,10 +105,41 @@
     &__gradient{
         fill: $color-blue-2;
     }
+
+    &__whatsapp{
+        display: flex;
+        align-items: center;
+        margin-right: $spacer-5;
+        a{
+            color: $color-white;
+        }
+    }
 }
 
+@include mobile{
+    .art-navbar{
+        &__whatsapp-wrap{
+            flex-direction: column-reverse;
+        }
+        &__whatsapp{
+            margin-top: $spacer-2;
+            font-size: 14px;
+        }
+        &__btn{
+            margin-right: 12px;
+        }
+        &__right-sec{
+            top: 2%;
+            right: 2%;
+            .art-btn-prop{
+                font-size: 11px;
+                min-width: 129px;
+            }
+        }
+    }
+}
 @include tablet{
-    .ledger-navbar{
+    .art-navbar{
         .navbar-collapse{
             .navbar-nav{
                 position: fixed;
@@ -126,11 +171,21 @@
                 transform: translateX(3px);
             }
         }
+        &__right-sec{
+            // top: 10%;
+            .art-btn-prop{
+                font-size: 11px;
+                min-width: 129px;
+            }
+        }
+        // &__whatsapp-wrap{
+        //     flex-direction: row;
+        // }
     }
 }
 
 @include desktop{
-    .ledger-navbar{
+    .art-navbar{
         &__right-sec{
             position: unset;
         }
