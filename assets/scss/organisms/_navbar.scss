@@ -118,6 +118,28 @@
 
 @include mobile{
     .art-navbar{
+        .navbar-collapse{
+            .navbar-nav{
+                position: fixed;
+                left: 0;
+                // background-color: $color-white;
+                width: 100%;
+                min-width: 280px;
+                height: max-content;
+                padding: $spacer-3;
+                transform: translateY(-280px);
+                transition: all .3s ease-in-out;
+                opacity: 0;
+                z-index: 999;
+                background-color: rgba(0,0,0,0.5);
+            }
+            &.show {
+                .navbar-nav {
+                    transform: translateY(0px);
+                    opacity: 1;
+                }
+            }
+        }
         &__whatsapp-wrap{
             flex-direction: column-reverse;
         }
@@ -138,13 +160,14 @@
         }
     }
 }
-@include tablet{
+
+@include mobile-pro{
     .art-navbar{
         .navbar-collapse{
             .navbar-nav{
                 position: fixed;
                 left: 0;
-                background-color: $color-white;
+                // background-color: $color-white;
                 width: 100%;
                 min-width: 280px;
                 height: max-content;
@@ -153,6 +176,34 @@
                 transition: all .3s ease-in-out;
                 opacity: 0;
                 z-index: 999;
+                background-color: rgba(0,0,0,0.5);
+            }
+            &.show {
+                .navbar-nav {
+                    transform: translateY(0px);
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+@include tablet{
+    .art-navbar{
+        .navbar-collapse{
+            .navbar-nav{
+                position: fixed;
+                left: 0;
+                // background-color: $color-white;
+                width: 100%;
+                min-width: 280px;
+                height: max-content;
+                padding: $spacer-3;
+                transform: translateY(-280px);
+                transition: all .3s ease-in-out;
+                opacity: 0;
+                z-index: 999;
+                background-color: rgba(0,0,0,0.5);
             }
             &.show {
                 .navbar-nav {
@@ -181,6 +232,11 @@
         // &__whatsapp-wrap{
         //     flex-direction: row;
         // }
+    }
+    .art-navbar .navbar-collapse.show{
+        .navbar{
+            background-color: rgba(0,0,0,0.5);
+        }
     }
 }
 
