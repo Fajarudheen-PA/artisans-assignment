@@ -64,10 +64,7 @@
         gap: 11%;
     }
 
-    &__price-field {
-        display: flex;
 
-    }
 
     &__label {
         margin: $spacer-3 $spacer-1;
@@ -165,18 +162,147 @@
 
     }
 
-    &__price-range-wrap {
+    &__price-field {
         display: flex;
+        width: 100%;
 
         &__left {
-            width: 50%;
-            
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+
+            &__rate-boxes {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            &__left-box {
+                display: flex;
+                // width: 50%;
+                background-color: rgba(255, 255, 255, 0.502);
+            }
+
+            &__separator {
+                font-size: 18px;
+                color: #ffffff;
+                font-weight: 400;
+                font-family: "Lato";
+                padding: $spacer-1 $spacer-3;
+                padding: $spacer-1 $spacer-3;
+            }
+
+            input {
+                background-color: rgba(255, 255, 255, 0);
+                padding: $spacer-1 $spacer-2;
+                color: $color-white !important;
+                font-weight: $font-bold;
+            }
+
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+
+            p {
+                padding: $spacer-1 $spacer-2;
+            }
+
+            .form-control {
+                border: unset;
+            }
+
+            .form-control:focus {
+                background-color: unset;
+                border: unset;
+                box-shadow: none;
+            }
         }
 
         &__right {
-            width: 50%;
-        }
+            width: 60%;
+            display: flex;
+            align-items: flex-end;
 
+            &__slider {
+                width: 100%;
+
+                &__price-input {
+                    width: 100%;
+                    display: flex;
+                    margin: 30px 0 35px;
+                }
+
+                &__field {
+                    width: 100%;
+
+                    input {
+                        width: 100%;
+                        background-color: transparent;
+                        color: $color-white !important;
+                    }
+
+                    input::-webkit-outer-spin-button,
+                    input::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                        margin: 0;
+                    }
+                }
+
+                &__input-min {
+                    text-align: center;
+                }
+
+                &__input-max {
+                    text-align: center;
+                }
+
+                &__controller {
+                    height: 3px;
+                    width: 90%;
+                    margin: 0 auto;
+                    border-radius: 5px;
+                    background: $color-grey-6;
+                    position: relative;
+
+                    &__progress {
+                        height: 3px;
+                        left: 25%;
+                        right: 25%;
+                        position: absolute;
+                        border-radius: 5px;
+                        background: $color-white;
+                    }
+                }
+                &__range-input{
+                    width: 90%;
+                    margin: 0 auto;
+                    position: relative;
+
+                    input{
+                        position: absolute;
+                        top: -3px;
+                        height: 3px;
+                        width: 100%;
+                        background: none;
+                        pointer-events: none;
+                        -webkit-appearance: none;
+                    }
+                    input[type="range"]::-webkit-slider-thumb{
+                        height: 17px;
+                        width: 17px;
+                        border-radius: 50%;
+                        pointer-events: auto;
+                        -webkit-appearance: none;
+                        background: $color-white;
+                    }
+                }
+            }
+
+            &__btn {
+                width: 50%;
+            }
+        }
     }
 
 
@@ -279,6 +405,21 @@
         &__price-field {
             flex-direction: column;
             align-items: center;
+            &__left{
+                &__rate-boxes{
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+            }
+            &__right{
+                flex-wrap: wrap;
+                &__slider{
+                    margin-bottom: $spacer-5;
+                }
+                &__btn{
+                    margin: auto;
+                }
+            }
         }
 
         &__radio-group {
@@ -325,7 +466,7 @@
         }
 
         &__price-field {
-            flex-direction: column;
+            // flex-direction: column;
             align-items: center;
         }
 

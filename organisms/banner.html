@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../assets/css/slick.css">
     <link rel="stylesheet" href="../assets/css/slick-theme.css">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -89,14 +90,54 @@
                             </div>
                             <!-- price range selection -->
                             <div class="banner__price-field">
-                                <div>
-                                    <label for="price" class="banner__label">Price Range</label>
-                                    <div class="banner__price-range-wrap">
-                                        <div class="banner__price-range-wrap__left">
+                                <!-- left -->
+                                <div class="banner__price-field__left">
+                                    <div>
+                                        <label for="price" class="banner__label">Price Range</label>
+                                    </div>
+                                    <div class="banner__price-field__left__rate-boxes">
+                                        <!-- left-count -->
+                                        <div class="banner__price-field__left__left-box">
+                                            <input type="number" class="form-control" min="0" value="2500">
+                                            <p>QAR</p>
                                         </div>
-                                        <div class="banner__price-range-wrap__right">
-
+                                        <!-- separator -->
+                                        <div>
+                                            <p class="banner__price-field__left__separator">To</p>
                                         </div>
+                                        <!-- right-count -->
+                                        <div class="banner__price-field__left__left-box">
+                                            <input type="number" class="form-control" min="0" value="7500">
+                                            <p>QAR</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- right -->
+                                <div class="banner__price-field__right">
+                                    <!-- slider -->
+                                    <div class="banner__price-field__right__slider">
+                                        <div class="banner__price-field__right__slider__price-input">
+                                            <div class="banner__price-field__right__slider__field">
+                                                <input type="number" class="banner__price-field__right__slider__input-min" value="2500">
+                                            </div>
+                                            <!-- <div>-</div> -->
+                                            <div class="banner__price-field__right__slider__field">
+                                                <input type="number" class="banner__price-field__right__slider__input-max" value="7500">
+                                            </div>
+                                        </div>
+                                        <div class="banner__price-field__right__slider__controller">
+                                            <div class="banner__price-field__right__slider__controller__progress"></div>
+                                        </div>
+                                        <div class="banner__price-field__right__slider__range-input">
+                                            <input type="range" class="range-min" min="0" max="10000" value="2500">
+                                            <input type="range" class="range-max" min="0" max="10000" value="7500">
+                                        </div>
+                                    </div>
+                                    <!-- btn -->
+                                    <div class="banner__price-field__right__btn">
+                                        <a href="#" class="art-btn-prop">
+                                            Search <i class='fas fa-arrow-right'></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
