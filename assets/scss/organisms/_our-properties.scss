@@ -123,6 +123,7 @@
                 width: 100%;
                 min-height: 560px;
                 // max-height: 561px;
+                margin: 0 19px;
                 &__price-grp {
                     display: flex;
                     flex-wrap: wrap;
@@ -131,8 +132,9 @@
             }
             .card-v2{
                 width: 100%;
-                min-height: 602px;
-                margin: inherit;
+                // min-height: 602px;
+                // margin: inherit;
+                margin: 0 19px;
             }
             .slick-prev:before{
                 right: -21px;
